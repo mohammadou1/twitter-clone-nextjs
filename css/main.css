@@ -1,0 +1,27 @@
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.anim {
+  @apply transition-all duration-100 ease-linear;
+}
+.mention,
+.hashtag {
+  @apply text-primary;
+  &:hover {
+    @apply underline;
+  }
+}
+.min-w-half {
+  min-width: 50%;
+}
+
+.widget {
+  @apply bg-dark-lighter rounded-xl overflow-hidden;
+  width: 320px;
+  @screen lg {
+    width: 350px;
+  }
+}

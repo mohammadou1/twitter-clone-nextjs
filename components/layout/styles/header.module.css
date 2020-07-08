@@ -1,0 +1,6 @@
+.header {
+  @apply px-4 max-h-screen sticky top-0;
+  @screen xl {
+    width: 275px;
+  }
+}

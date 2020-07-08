@@ -1,0 +1,40 @@
+{
+	"env": {
+		"browser": true,
+		"es2020": true,
+		"node": true
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"prettier",
+		"prettier/@typescript-eslint",
+		"prettier/react"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 11,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint", "prettier"],
+
+	"rules": {
+		"react/prop-types": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"no-unused-vars": "warn",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"react/react-in-jsx-scope": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"explicit-module-boundary-types": "off",
+		"react/no-unescaped-entities": "off",
+		"react/prefer-stateless-function": 1
+	},
+	"globals": {
+		"React": "writable"
+	}
+}

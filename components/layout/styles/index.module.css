@@ -1,0 +1,8 @@
+.main {
+  @apply min-h-screen;
+  @media (min-width: 1000px) {
+    width: 990px;
+  }
+  width: 600px;
+  max-width: calc(100vw - 97px);
+}

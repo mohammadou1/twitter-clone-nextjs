@@ -1,0 +1,9 @@
+.actionbtn {
+  @apply text-primary p-2 rounded-full;
+  &:hover {
+    @apply bg-primary bg-opacity-25;
+  }
+  &:focus {
+    @apply outline-none bg-opacity-50;
+  }
+}
