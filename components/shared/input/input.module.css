@@ -1,0 +1,9 @@
+.input {
+	@apply bg-dark-lighter border-b-2 rounded-sm text-left;
+	&:focus-within {
+		label {
+			@apply text-primary;
+		}
+		@apply border-primary;
+	}
+}

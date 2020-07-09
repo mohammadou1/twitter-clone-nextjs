@@ -65,8 +65,10 @@ const TweetBox: React.FC = () => {
 						</div>
 						<div className="">
 							<button
-								disabled
-								className="text-white cursor-not-allowed opacity-50 px-4 py-2 shadow-sm focus:outline-none font-bold bg-primary rounded-full">
+								disabled={tweetData.length === 0}
+								className={`text-white px-4 py-2 shadow-sm focus:outline-none font-bold bg-primary rounded-full ${
+									tweetData.length === 0 ? 'cursor-not-allowed opacity-50' : ''
+								}`}>
 								Tweet
 							</button>
 						</div>
