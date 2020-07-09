@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 import styles from './styles/nav.module.css';
 import useMedia from '~/hooks/useMedia';
 const links = [
-	{ href: '/', icon: <Home height="1.4rem" />, title: 'Home' },
+	{ href: '/home', icon: <Home height="1.4rem" />, title: 'Home' },
 	{ href: '/explore', icon: <Explore height="1.4rem" />, title: 'Explore' },
 	{ href: '/notifications', icon: <Notification height="1.4rem" />, title: 'Notifications' },
 	{ href: '/messages', icon: <Envelope height="1.4rem" />, title: 'Messages' },
@@ -31,7 +31,7 @@ const TwitterNav = () => {
 				const classname = path === link.href ? 'text-primary' : 'text-white';
 				return (
 					<Link key={link.href} href={link.href}>
-						<a className={`${classname} ${styles.link}`}>
+						<a className={` ${styles.link} ${classname}`}>
 							<div className="font-bold inline-flex items-center text-xl anim rounded-full px-2 xl:px-3 py-2">
 								{link.icon}
 								<div className="mx-5 hidden xl:inline-block">
@@ -43,7 +43,7 @@ const TwitterNav = () => {
 				);
 			})}
 			<div className={styles.link}>
-				<div className="font-bold inline-flex items-center text-xl anim rounded-full px-2 xl:px-3 py-2">
+				<div className="font-bold inline-flex text-white items-center text-xl anim rounded-full px-2 xl:px-3 py-2">
 					<Settings height="1.4rem" />
 					<div className="mx-5 hidden xl:inline-block">
 						<span>More</span>

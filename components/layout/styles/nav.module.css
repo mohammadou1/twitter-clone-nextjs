@@ -1,5 +1,5 @@
 .link {
-	@apply inline-block mb-4 text-white cursor-pointer;
+	@apply inline-block mb-4 cursor-pointer;
 	@screen xl {
 		@apply mb-3;
 	}
