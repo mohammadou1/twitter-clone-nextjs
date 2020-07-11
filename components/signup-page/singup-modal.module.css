@@ -1,6 +1,6 @@
 .modal {
   z-index: 51;
-  @apply bg-dark max-h-screen  rounded-xl w-screen h-screen;
+  @apply bg-dark max-h-screen w-screen h-screen pt-8;
   &:focus {
     @apply outline-none;
   }
@@ -8,6 +8,7 @@
     min-height: 600px;
     max-height: 600px;
     max-width: 600px;
+    @apply rounded-xl pt-0;
   }
 }
 .overlay {
