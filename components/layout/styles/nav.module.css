@@ -1,11 +1,11 @@
 .link {
-	@apply inline-block mb-4 cursor-pointer;
-	@screen xl {
-		@apply mb-3;
-	}
-	&:hover {
-		> div {
-			@apply bg-primary text-primary bg-opacity-25;
-		}
-	}
+  @apply inline-block mb-4 cursor-pointer;
+  @screen xl {
+    @apply mb-3;
+  }
+  &:hover {
+    > div {
+      @apply bg-primary text-primary bg-opacity-25;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import CenterContent from '~/components/shared/center-content';
-import HomeCenterComponent from '~/components/home-page';
+import HomeCenterComponent from '~/components/home-page/home-center-component';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { INextPage } from '~/types/INextPage';

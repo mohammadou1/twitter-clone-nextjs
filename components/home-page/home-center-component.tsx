@@ -1,12 +1,8 @@
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import { tweets } from '../../fake-data/tweets';
 import ReactList from 'react-list';
-const TweetComponent = dynamic(() => import('../shared/tweet'), { ssr: false })
-const TweetBox = dynamic(() => import('./tweet-box'), { ssr: false })
-
-
-
-
+const TweetComponent = dynamic(() => import('../shared/tweet'), { ssr: false });
+const TweetBox = dynamic(() => import('./tweet-box'), { ssr: false });
 
 const HomeCenterComponent = () => {
 	return (
@@ -15,8 +11,13 @@ const HomeCenterComponent = () => {
 				<span className="text-white text-xl font-extrabold">Home</span>
 			</div>
 			<TweetBox />
-			<div >
-				<ReactList type="variable" axis="y" length={tweets.length} itemRenderer={((idx, key) => <TweetComponent key={key} {...tweets[idx]} />)} />
+			<div>
+				<ReactList
+					type="variable"
+					axis="y"
+					length={tweets.length}
+					itemRenderer={(idx, key) => <TweetComponent key={key} {...tweets[idx]} />}
+				/>
 			</div>
 		</div>
 	);

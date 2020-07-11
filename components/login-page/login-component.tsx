@@ -16,7 +16,7 @@ const LoginComponent = () => {
 		<div className="flex flex-col justify-center  container mt-5 text-white mx-auto">
 			<Logo height="2.3rem" />
 			<span className="font-bold text-2xl mt-6 pt-1 text-center">Log in to Twitter</span>
-
+			<small className="text-center">just type anything</small>
 			<div className=" lg:w-5/12 lg:px-0 px-5 w-full mt-5 mx-auto">
 				<form noValidate onSubmit={handleSubmit(submitForm)}>
 					<div className="mb-5">
@@ -53,6 +53,7 @@ const LoginComponent = () => {
 					</div>
 					<div className="-mx-1 mb-5">
 						<button
+							type="submit"
 							className={`bg-primary focus:outline-none font-bold hover:bg-primary-hover text-white rounded-full w-full py-3`}>
 							Log in
 						</button>
@@ -62,7 +63,7 @@ const LoginComponent = () => {
 							<a className="text-primary items-center hover:underline mr-2">Forgot password?</a>
 						</Link>
 						<div className="text-gray-500 leading-none">.</div>
-						<Link href="/signup">
+						<Link href="/login?signup=true" as="/signup">
 							<a className="text-primary hover:underline ml-2">Sign up for Twitter</a>
 						</Link>
 					</div>
