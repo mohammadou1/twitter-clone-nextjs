@@ -30,7 +30,7 @@ const TwitterNav = () => {
 			{links.map(link => {
 				const classname = path === link.href ? 'text-primary' : 'text-white';
 				return (
-					<Link key={link.href} href={link.href}>
+					<Link prefetch={false} key={link.href} href={link.href}>
 						<a className={` ${styles.link} ${classname}`}>
 							<div className="font-bold inline-flex items-center text-xl anim rounded-full px-2 xl:px-3 py-2">
 								{link.icon}
