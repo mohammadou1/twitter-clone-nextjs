@@ -18,7 +18,7 @@
     "react-hook-form": "^6.0.2",
     "react-list": "^0.8.15",
     "react-modal": "^3.11.2",
-    "sanitize-html": "^1.27.0",
+    "sanitize-html": "^2.3.2",
     "validator": "^13.1.1"
   },
   "devDependencies": {
