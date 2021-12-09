@@ -11,7 +11,7 @@
     "@svgr/webpack": "^5.4.0",
     "@types/react-list": "^0.8.5",
     "moment": "^2.27.0",
-    "next": "^9.4.4",
+    "next": "^11.1.3",
     "react": "16.13.1",
     "react-contenteditable": "^3.3.5",
     "react-dom": "16.13.1",
